@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/webjars/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>Juego terminado</title>
+</head>
+
+<body>
+    <main style="width:700px; padding: 15px;">
+        <h1>Has completado el juego.</h1>
+        <p>Has contestado <span th:text="${aciertos}"></span> correctamente.</p>
+        <br>
+        <a class="btn btn-primary btn-block" th:href="@{/}">Volver a inicio</a>
+    </main>
+</body>
+
+</html>
