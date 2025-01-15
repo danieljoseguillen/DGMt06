@@ -40,5 +40,6 @@ public class PacienteDTO {
     private String medicamentos;
 
     @Past
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate ultimaRevision;
 }

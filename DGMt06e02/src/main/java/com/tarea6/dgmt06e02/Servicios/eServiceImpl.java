@@ -26,7 +26,7 @@ public class eServiceImpl implements eService {
     public List<Empleado> listSorted(String val) {
         List<Empleado> empSorted = new ArrayList<>();
         for (Empleado empleado : empRepository) {
-            if (empleado.getNombre().contains(val)) {
+            if (empleado.getNombre().toLowerCase().contains(val.toLowerCase())) {
                 empSorted.add(empleado);
             }
         }
